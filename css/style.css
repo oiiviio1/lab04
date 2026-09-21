@@ -119,6 +119,41 @@
   color: var(--accent);
 }
 
+/* ---------- 主题切换按钮 ---------- */
+.theme-toggle {
+  margin-left: auto;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+.theme-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.theme-toggle svg {
+  width: 16px;
+  height: 16px;
+}
+/* 深色主题显示太阳图标（点击切换到浅色），浅色主题显示月亮图标 */
+.theme-toggle .icon-moon {
+  display: none;
+}
+html[data-theme="light"] .theme-toggle .icon-sun {
+  display: none;
+}
+html[data-theme="light"] .theme-toggle .icon-moon {
+  display: block;
+}
+
 /* ---------- 板块 ---------- */
 .section {
   padding: 24px 0 56px;

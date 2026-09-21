@@ -46,4 +46,30 @@
   sidebar.addEventListener("click", (e) => {
     if (e.target.classList.contains("nav-link")) setMenu(false);
   });
+
+  /* ---------- 主题切换（浅色 / 深色，localStorage 记忆） ---------- */
+  const THEME_KEY = "theme";
+  const themeToggles = document.querySelectorAll(".theme-toggle");
+
+  function applyTheme(theme) {
+    document.documentElement.dataset.theme = theme;
+    themeToggles.forEach((btn) =>
+      btn.setAttribute(
+        "aria-label",
+        theme === "light" ? "切换到深色主题" : "切换到浅色主题"
+      )
+    );
+  }
+
+  // 初始化：读取上次选择，默认深色（与现有视觉风格一致）
+  applyTheme(localStorage.getItem(THEME_KEY) === "light" ? "light" : "dark");
+
+  themeToggles.forEach((btn) =>
+    btn.addEventListener("click", () => {
+      const next =
+        document.documentElement.dataset.theme === "light" ? "dark" : "light";
+      applyTheme(next);
+      localStorage.setItem(THEME_KEY, next);
+    })
+  );
 })();
