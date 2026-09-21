@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="个人作品集主页 - 自我简介、技术能力与项目案例" />
+  <title>作品集 · 首页</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- 固定侧边信息栏 -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+      <header class="profile">
+        <div class="avatar avatar-initial" aria-hidden="true">郑</div>
+        <h1 class="name">郑丹婷</h1>
+        <p class="role">数据分析与大数据技术 · 作品集</p>
+      </header>
+
+      <nav class="nav">
+        <a href="#home" class="nav-link is-active" data-target="home">首页</a>
+        <a href="#projects" class="nav-link" data-target="projects">项目案例</a>
+        <a href="#about" class="nav-link" data-target="about">个人详情</a>
+        <a href="#contact" class="nav-link" data-target="contact">联络信息</a>
+      </nav>
+
+      <section class="skills">
+        <h2 class="block-title">技能清单</h2>
+        <ul id="skillList" class="skill-list"></ul>
+      </section>
+
+      <footer class="sidebar-footer">
+        <a class="social-link" href="mailto:xiaohe@example.com" aria-label="邮箱">Email</a>
+        <a class="social-link" href="https://github.com/xiaohe-dev" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a class="social-link" href="https://xiaohe.dev" target="_blank" rel="noopener" aria-label="个人主页">首页</a>
+      </footer>
+    </div>
+  </aside>
+
+  <!-- 移动端顶部栏 -->
+  <header class="topbar">
+    <button id="menuToggle" class="menu-toggle" aria-label="打开菜单" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <span class="topbar-title">郑丹婷 · 作品集</span>
+  </header>
+
+  <!-- 主内容区 -->
+  <main class="main">
+    <div class="main-inner">
+
+      <!-- 首页介绍 -->
+      <section id="home" class="section intro">
+        <p class="section-eyebrow">PORTFOLIO</p>
+        <h2 class="section-title">你好，我是郑丹婷</h2>
+        <p class="intro-text">
+          一名数据分析与大数据技术专业学生，目前主要关注 AI 辅助开发与大语言模型技术。
+          平时使用 Python、Java 和 TypeScript 进行项目开发，也在持续学习前后端开发、数据可视化与 AI 应用构建。
+          这里是我在学习与实践中积累的作品集。
+        </p>
+        <div class="intro-actions">
+          <a href="#projects" class="btn btn-primary">浏览项目案例</a>
+          <a href="#contact" class="btn btn-ghost">联络我</a>
+        </div>
+      </section>
+
+      <!-- 项目案例展示区 -->
+      <section id="projects" class="section">
+        <div class="section-head">
+          <h2 class="section-title">项目案例</h2>
+          <div id="projectFilters" class="filters"></div>
+        </div>
+        <div id="projectList" class="project-list"></div>
+      </section>
+
+      <!-- 个人详情 -->
+      <section id="about" class="section">
+        <p class="section-eyebrow">ABOUT</p>
+        <h2 class="section-title">个人详情</h2>
+        <p class="about-text">
+          我是广州软件学院数据分析与大数据技术专业的学生（在读），当前研究方向聚焦
+          AI 辅助开发与大语言模型应用。擅长使用 Python、Java、TypeScript 与 HTML/CSS
+          进行项目开发，并持续深耕前后端开发、数据可视化与 AI 应用构建。
+        </p>
+
+        <div class="timeline-block">
+          <h3 class="block-title">个人概况</h3>
+          <ul class="timeline">
+            <li class="timeline-item">
+              <span class="timeline-date">姓名</span>
+              <p class="timeline-title">郑丹婷</p>
+              <p class="timeline-desc">数据分析与大数据技术专业学生</p>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-date">方向</span>
+              <p class="timeline-title">AI 辅助开发 · 大语言模型应用</p>
+              <p class="timeline-desc">在校就读于广州软件学院，现居广州。</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="timeline-block">
+          <h3 class="block-title">技能清单</h3>
+          <p class="intent">
+            Python · Java · TypeScript · HTML/CSS · 数据可视化 · AI 应用构建
+          </p>
+        </div>
+      </section>
+
+      <!-- 联络信息 -->
+      <section id="contact" class="section">
+        <p class="section-eyebrow">CONTACT</p>
+        <h2 class="section-title">联络信息</h2>
+        <ul class="contact-list">
+          <li class="contact-item">邮箱：<a href="mailto:xiaohe@example.com">xiaohe@example.com</a></li>
+          <li class="contact-item">微信：xiaohezi</li>
+          <li class="contact-item">GitHub：<a href="https://github.com/xiaohe-dev" target="_blank" rel="noopener">github.com/xiaohe-dev</a></li>
+          <li class="contact-item">个人主页：<a href="https://xiaohe.dev" target="_blank" rel="noopener">xiaohe.dev</a></li>
+          <li class="contact-item">所在地：中国 · 广州</li>
+        </ul>
+        <form id="contactForm" class="contact-form" novalidate>
+          <h3 class="block-title">给我留言</h3>
+          <label class="field">
+            <span>你的称呼</span>
+            <input type="text" name="name" placeholder="怎么称呼你" />
+          </label>
+          <label class="field">
+            <span>邮箱地址</span>
+            <input type="email" name="email" placeholder="name@example.com" />
+          </label>
+          <label class="field">
+            <span>留言内容</span>
+            <textarea name="message" rows="4" placeholder="想聊些什么？"></textarea>
+          </label>
+          <p id="formStatus" class="form-status" role="status"></p>
+          <button type="submit" class="btn btn-primary">发送</button>
+        </form>
+      </section>
+
+      <footer class="main-footer">
+        <span>© 2026 郑丹婷 · 数据分析与大数据技术 · 原生 HTML / CSS / JavaScript</span>
+      </footer>
+    </div>
+  </main>
+
+  <script src="js/projects.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

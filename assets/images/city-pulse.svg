@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="城市脉搏 - 城市交通天气数据可视化大屏">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0f16"/><stop offset="1" stop-color="#12202b"/>
+    </linearGradient>
+    <linearGradient id="ac2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0fb3a7"/><stop offset="1" stop-color="#34e0c2"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg2)"/>
+  <rect x="40" y="40" width="720" height="370" rx="20" fill="#101a24" stroke="#233344" stroke-width="1.5"/>
+  <rect x="72" y="72" width="150" height="22" rx="11" fill="#223344"/>
+  <path d="M72 120 L200 120 L260 170 L360 150 L470 200 L570 120 L728 120" fill="none" stroke="#0fb3a7" stroke-width="2" opacity="0.8"/>
+  <circle cx="200" cy="120" r="5" fill="#2ce0c9"/>
+  <circle cx="360" cy="150" r="5" fill="#2ce0c9"/>
+  <circle cx="570" cy="120" r="5" fill="#2ce0c9"/>
+  <circle cx="470" cy="200" r="6" fill="#0fb3a7"/>
+  <g opacity="0.9">
+    <rect x="72" y="230" width="120" height="70" rx="10" fill="#17222e" stroke="#233344"/>
+    <rect x="84" y="292" width="60" height="8" rx="4" fill="#34465a"/>
+    <rect x="88" y="248" width="34" height="30" rx="4" fill="url(#ac2)"/>
+    <rect x="128" y="258" width="34" height="20" rx="4" fill="#0fb3a7" opacity="0.5"/>
+  </g>
+  <g transform="translate(220,230)">
+    <rect width="150" height="70" rx="10" fill="#17222e" stroke="#233344"/>
+    <path d="M12 50 L50 30 L80 42 L118 22 L138 34" fill="none" stroke="#2ce0c9" stroke-width="2.5"/>
+    <rect x="12" y="56" width="84" height="6" rx="3" fill="#34465a"/>
+  </g>
+  <g transform="translate(400,230)">
+    <rect width="160" height="70" rx="10" fill="#17222e" stroke="#233344"/>
+    <rect x="16" y="12" width="34" height="40" rx="4" fill="#0fb3a7" opacity="0.7"/>
+    <rect x="62" y="22" width="34" height="30" rx="4" fill="#2ce0c9" opacity="0.7"/>
+    <rect x="108" y="16" width="34" height="36" rx="4" fill="#0fb3a7" opacity="0.4"/>
+  </g>
+  <g transform="translate(590,230)">
+    <rect width="140" height="70" rx="10" fill="#17222e" stroke="#233344"/>
+    <circle cx="70" cy="30" r="16" fill="none" stroke="#2ce0c9" stroke-width="2.5"/>
+    <circle cx="70" cy="30" r="14" fill="none" stroke="#0fb3a7" stroke-width="1.5" stroke-dasharray="4 3"/>
+  </g>
+</svg>
